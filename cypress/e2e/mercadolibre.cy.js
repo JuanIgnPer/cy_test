@@ -9,6 +9,7 @@ describe('Automation practice page test', () => {
         indexPage.search('volkswagen suran')
         //cy.get('#nav-search-input').type("volkswagen suran")
         //cy.get('.nav-icon-search').click()
+        cy.logWithFormat("test text")
         cy.get('#mlCategory > label').should('have.text', 'Solo en Autos y Camionetas')
     })
 
